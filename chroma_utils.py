@@ -12,18 +12,18 @@ print("--- DEBUG ---")
 print(f"Loaded Hugging Face Token: {os.getenv('HUGGINGFACEHUB_API_TOKEN')}")
 print("-------------")
 
-# Initialize text splitter and embedding function
 text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=200, length_function=len)
 
-# Use a free, high-quality embedding model from Hugging Face
 embedding_function = HuggingFaceEndpointEmbeddings(
     model="sentence-transformers/all-MiniLM-L6-v2",
     huggingfacehub_api_token=os.getenv("HUGGINGFACEHUB_API_TOKEN")
 )
 
-# Initialize Chroma vector store
-# A persistent path provided by Render
-vectorstore = Chroma(persist_directory="/var/data/chroma_db", embedding_function=embedding_function)
+# --- KEY CHANGE FOR RENDER FREE TIER ---
+# By removing `persist_directory`, ChromaDB will run in-memory.
+# This means the vector index will be lost when the app restarts or sleeps.
+# This is a necessary trade-off for the free tier.
+vectorstore = Chroma(embedding_function=embedding_function)
 
 def load_and_split_document(file_path: str) -> List[Document]:
     if file_path.endswith('.pdf'):
@@ -51,9 +51,12 @@ def index_document_to_chroma(file_path: str, file_id: int) -> bool:
         return False
 
 def delete_doc_from_chroma(file_id: int):
+    # This will delete from the current in-memory collection
     try:
+        # Note: This is not the most efficient way for in-memory, but it works.
+        # A more advanced approach would be to get document IDs and use vectorstore.delete(ids=...)
         vectorstore._collection.delete(where={"file_id": file_id})
-        print(f"Deleted all documents with file_id {file_id}")
+        print(f"Deleted all documents with file_id {file_id} from in-memory store.")
         return True
     except Exception as e:
         print(f"Error deleting document with file_id {file_id} from Chroma: {str(e)}")
