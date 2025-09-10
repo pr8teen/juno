@@ -1,0 +1,18 @@
+# Virtual Environment
+venv/
+/venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# IDE files
+.vscode/
+.idea/
+
+# Local DB and Logs
+rag_app.db
+app.log
+
+# Environment variables (DO NOT UPLOAD!)
+.env
