@@ -230,5 +230,4 @@ This project is licensed under the MIT License.
 
 ---
 
-Created by [Prasannajeet Ojha](https://github.com/YOUR_USERNAME).
-*(Don't forget to replace `YOUR_USERNAME` with your GitHub username!)*
+Created by Prasannajeet Ojha.
