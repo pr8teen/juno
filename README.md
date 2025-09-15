@@ -59,7 +59,6 @@ Choose the guide for your operating system.
 
 1.  **Open PowerShell** (or Command Prompt).
 2.  **Clone the repository:**
-    *(Replace `YOUR_USERNAME/juno-rag-app` with your repo path)*
     ```powershell
     git clone [https://github.com/pr8teen/juno.git](https://github.com/YOUR_USERNAME/juno-rag-app.git)
     cd juno-rag-app
@@ -95,7 +94,6 @@ Choose the guide for your operating system.
 
 1.  **Open Terminal**.
 2.  **Clone the repository:**
-    *(Replace `YOUR_USERNAME/juno-rag-app` with your repo path)*
     ```bash
     git clone [https://github.com/pr8teen/juno.git]
     cd juno-rag-app
@@ -137,7 +135,6 @@ Choose the guide for your operating system.
     sudo apt-get install -y python3-venv
     ```
 3.  **Clone the repository:**
-    *(Replace `YOUR_USERNAME/juno-rag-app` with your repo path)*
     ```bash
     git clone [https://github.com/pr8teen/juno.git]
     cd juno-rag-app
