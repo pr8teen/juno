@@ -1,5 +1,3 @@
-Markdown
-
 # Juno - Your Personal RAG Chatbot
 
 
