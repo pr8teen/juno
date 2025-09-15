@@ -61,7 +61,7 @@ Choose the guide for your operating system.
 2.  **Clone the repository:**
     *(Replace `YOUR_USERNAME/juno-rag-app` with your repo path)*
     ```powershell
-    git clone [https://github.com/YOUR_USERNAME/juno-rag-app.git](https://github.com/YOUR_USERNAME/juno-rag-app.git)
+    git clone [https://github.com/pr8teen/juno.git](https://github.com/YOUR_USERNAME/juno-rag-app.git)
     cd juno-rag-app
     ```
 3.  **Create a virtual environment:**
@@ -97,7 +97,7 @@ Choose the guide for your operating system.
 2.  **Clone the repository:**
     *(Replace `YOUR_USERNAME/juno-rag-app` with your repo path)*
     ```bash
-    git clone [https://github.com/YOUR_USERNAME/juno-rag-app.git](https://github.com/YOUR_USERNAME/juno-rag-app.git)
+    git clone [https://github.com/pr8teen/juno.git]
     cd juno-rag-app
     ```
 3.  **Create a virtual environment:**
@@ -139,7 +139,7 @@ Choose the guide for your operating system.
 3.  **Clone the repository:**
     *(Replace `YOUR_USERNAME/juno-rag-app` with your repo path)*
     ```bash
-    git clone [https://github.com/YOUR_USERNAME/juno-rag-app.git](https://github.com/YOUR_USERNAME/juno-rag-app.git)
+    git clone [https://github.com/pr8teen/juno.git]
     cd juno-rag-app
     ```
 4.  **Create a virtual environment:**
