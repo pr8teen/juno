@@ -1,10 +1,9 @@
 # Juno - Your Personal RAG Chatbot
 
-
 <img width="1440" height="706" alt="image" src="https://github.com/user-attachments/assets/ea3c41a3-4fbc-4bf4-ad50-04a94fd4dca6" />
 <img width="1435" height="705" alt="image" src="https://github.com/user-attachments/assets/fa2d80c3-07b3-4973-aeba-eeefdd5ba32a" />
 
-LINK: https://www.youtube.com/watch?v=wG-rn6ty3Wk
+**[Watch the Video Demo on YouTube](https://www.youtube.com/watch?v=wG-rn6ty3Wk)**
 
 Juno is a private, locally-run AI research assistant that lets you have conversations with your own documents. I built this project to solve a problem I faced while drowning in user research documents for a project—it was impossible to find and synthesize information efficiently.
 
@@ -60,8 +59,8 @@ Choose the guide for your operating system.
 1.  **Open PowerShell** (or Command Prompt).
 2.  **Clone the repository:**
     ```powershell
-    git clone [https://github.com/pr8teen/juno.git](https://github.com/YOUR_USERNAME/juno-rag-app.git)
-    cd juno-rag-app
+    git clone [https://github.com/pr8teen/juno.git](https://github.com/pr8teen/juno.git)
+    cd juno
     ```
 3.  **Create a virtual environment:**
     ```powershell
@@ -95,8 +94,8 @@ Choose the guide for your operating system.
 1.  **Open Terminal**.
 2.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/pr8teen/juno.git]
-    cd juno-rag-app
+    git clone [https://github.com/pr8teen/juno.git](https://github.com/pr8teen/juno.git)
+    cd juno
     ```
 3.  **Create a virtual environment:**
     ```bash
@@ -136,8 +135,8 @@ Choose the guide for your operating system.
     ```
 3.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/pr8teen/juno.git]
-    cd juno-rag-app
+    git clone [https://github.com/pr8teen/juno.git](https://github.com/pr8teen/juno.git)
+    cd juno
     ```
 4.  **Create a virtual environment:**
     ```bash
@@ -198,8 +197,9 @@ You should see the Juno landing page.
 ---
 
 ## 📂 Project Structure
-```
-juno-rag-app/
+
+```bash
+juno/
 ├── db/                      # SQLite DBs and ChromaDB vectorstore are created here
 ├── static/
 │   ├── img/                 # Your photo, screenshot, etc.
@@ -215,9 +215,6 @@ juno-rag-app/
 ├── pydantic_models.py       # Data models for FastAPI
 ├── requirements.txt         # List of Python packages
 └── README.md                # You are here!
-
-
----
 ```
 ## 📄 License
 
