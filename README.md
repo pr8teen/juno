@@ -6,6 +6,8 @@ Markdown
 <img width="1440" height="706" alt="image" src="https://github.com/user-attachments/assets/ea3c41a3-4fbc-4bf4-ad50-04a94fd4dca6" />
 <img width="1435" height="705" alt="image" src="https://github.com/user-attachments/assets/fa2d80c3-07b3-4973-aeba-eeefdd5ba32a" />
 
+LINK: https://www.youtube.com/watch?v=wG-rn6ty3Wk
+
 Juno is a private, locally-run AI research assistant that lets you have conversations with your own documents. I built this project to solve a problem I faced while drowning in user research documents for a project—it was impossible to find and synthesize information efficiently.
 
 Unlike general chatbots like ChatGPT, Juno is:
